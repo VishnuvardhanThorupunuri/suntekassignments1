@@ -1,0 +1,33 @@
+###create user
+POST http://localhost:5000/user-api/users
+Content-Type: application/json
+
+{
+    "name":"vishnu",
+    "email":"vishnu12@gmail.com",
+    "dateOfBirth":"2004-03-14",
+    "mobileNumber":"1234567890"
+}
+
+###read all users
+GET http://localhost:5000/user-api/users
+
+###read user by id
+GET http://localhost:5000/user-api/users/69b1a6ca3aac32b1ddcc0ba0
+
+###update user by id
+PUT http://localhost:5000/user-api/users/69b1a6ca3aac32b1ddcc0ba0
+Content-Type: application/json
+
+{
+    "name":"vishnu2",
+    "email":"vishnu@gmail.com",
+    "dateOfBirth":"2004-03-14",
+    "mobileNumber":"9392774409"
+}
+
+###delete user by id
+DELETE http://localhost:5000/user-api/users/69b1a6ca3aac32b1ddcc0ba0
+
+###activate user by id
+PATCH  http://localhost:5000/user-api/users/69b1a6ca3aac32b1ddcc0ba0

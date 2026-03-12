@@ -1,0 +1,59 @@
+###register user
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "firstName":"Subhash",
+    "lastName":"Kumar",
+    "email":"subhash@gmail.com",
+    "password":"subhash123",
+    "profileImageUrl":"http://example.com/profile.jpg"
+    }
+
+
+###authenticate user
+POST http://localhost:3000/user-api/users
+Content-Type: application/json
+
+{
+    "firstName":"Subhash",
+    "email":"subhash@gmail.com",
+    "password":"subhash123"
+    }
+
+
+###register author
+POST http://localhost:3000/author-api/users
+Content-Type: application/json
+
+{
+    "firstName":"subhash",
+    "lastName":"Kumar",
+    "email":"sk@gmail.com",
+    "password":"sk123456",
+    "profileImageUrl":"http://example.com/profile.jpg"
+    
+    }
+
+###create article(author)
+POST http://localhost:3000/author-api/articles
+Content-Type: application/json
+
+{
+    "author":"698973e1053fba1453bfa344",
+    "title":"JavaScript Basics",
+    "category":"Programming",
+    "content":"javascript is a web programming language"
+}
+
+###read articles of author
+GET http://localhost:3000/author-api/articles/698973e1053fba1453bfa344
+
+###author login
+POST http://localhost:3000/author-api/users/authenticate
+Content-Type: application/json
+
+{
+    "email":""
+    "password":""
+}

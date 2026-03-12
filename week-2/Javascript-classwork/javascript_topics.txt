@@ -1,0 +1,35 @@
+
+Asynchronous
+-------------------
+1.Javascript is a single thread programming language.
+2.A program can done one task at a time.
+3.Browsers Javascript runtime = Javascript Engine + Web Api + Event loop
+4.Nodejs Javascript runtime = Javascript runtime+Nodejs APIs +Event loop
+
+
+Most frequent Asynchronous 
+
+
+
+
+
+
+
+
+
+
+
+
+Timer Functions 
+---------------
+setTimeout(()={},timeout)
+setinterval(()={},timeout)
+
+1.
+
+
+
+
+steps to create backend
+1.generate package.json
+   npm init

@@ -1,0 +1,9 @@
+Rest Api->Resource based protocol
+--------------
+Rest Api End Points
+-----------------
+An Endpoint is a URL where your API can be accessed to perform specific operations on resources.
+                        |Endpoint path|
+https://api.example.com/users/123
+-----------------------|-----|----
+Base URL             Resource|ID
